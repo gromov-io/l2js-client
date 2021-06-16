@@ -1,7 +1,7 @@
 const { description } = require('../../package')
 
 module.exports = {
-  base: '/l2js-client',
+  base: '/l2js-client/',
   dest: 'docs',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
