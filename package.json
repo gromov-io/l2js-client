@@ -12,6 +12,8 @@
     "prebuildpackage": "npm run clean && npm run compile && node dist/SetupPackage.js",
     "buildpackage": "cd dist && npm pack",
     "lint": "eslint ./src/**",
+    "dev:docs": "vuepress dev docs",
+    "build": "vuepress build docs",
     "build:docs": "cd ./docs && npm i && npm run build && cp -r ./src/.vuepress/dist/* ../public",
     "publish": "npm publish --access public"
   },
@@ -37,6 +39,7 @@
   "devDependencies": {
     "@types/node": "^13.13.2",
     "@types/node-rsa": "^1.0.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "vuepress": "^1.5.3"
   }
 }
